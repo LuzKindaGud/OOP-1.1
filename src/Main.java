@@ -1,15 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        Circle c1 = new Circle(1.1);
+        Circle c1 = new Circle(1.1 ,"Yellow");
         System.out.println(c1);   // toString()
         Circle c2 = new Circle(); // default constructor
         System.out.println(c2);
 
         c1.setRadius(2.2);
+        c1.setColor("Green");
         System.out.println(c1);      // toString()
         System.out.println("radius is: " + c1.getRadius());
+        System.out.println("color is: " + c1.getColor());
 
         System.out.printf("area is: %.2f%n", c1.getArea());
-        System.out.printf("circumference is: %.2f%n", c1.getCircumference());
     }
 }
